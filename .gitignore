@@ -1,0 +1,7 @@
+# Folders to ignore
+env/
+
+# Files to ignore
+.DS_Store
+backend/db.sqlite3
+backend/.env
