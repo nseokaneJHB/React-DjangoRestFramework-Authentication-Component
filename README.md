@@ -33,14 +33,15 @@
 #
 
 ## ***Running the project***
-> NB: Change the port numbers to your respective ports
-6. ***On your backend terminal run:***
+> NB: Change the port numbers
+1. ***Make sure to add a .env file***
+2. ***On your backend terminal run:***
    - **_`python manage.py runserver` if on Windows_**
    - **_`python3 manage.py runserver` if on Linux_**
-7. ***Go to the browser and enter `http://127.0.0.1:8000/` on the address bar to run the Backend App***
-8. ***On your Frontend terminal run:***
+3. ***Go to the browser and enter `http://127.0.0.1:8000/` on the address bar to run the Backend App***
+4. ***On your Frontend terminal run:***
    - **_`npm start`_**
-9. ***Go to the browser and enter `http://localhost:3000/` on the address bar to run the Frontend App***
+5.  ***Go to the browser and enter `http://localhost:3000/` on the address bar to run the Frontend App***
 
 #
 
