@@ -33,6 +33,7 @@
 #
 
 ## ***Running the project***
+> NB: Change the port numbers to your respective ports
 6. ***On your backend terminal run:***
    - **_`python manage.py runserver` if on Windows_**
    - **_`python3 manage.py runserver` if on Linux_**
