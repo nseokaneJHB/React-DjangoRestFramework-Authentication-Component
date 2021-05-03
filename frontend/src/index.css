@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+:root {
+  --mainShadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  --lightBorder: 1px solid rgba(255, 255, 255, 0.5);
+  --mainColor: #8a8a8a;
+  --mainBG: #161623;
+  --mainRadius: 15px;
+  --secondaryBG: rgba(255, 255, 255, 0.1);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,5 +15,116 @@
   transition: 2s;
   padding: 0;
   margin: 0;
+}
+
+body {
+  background-color: #161623;
+  min-height: 100vh;
+}
+
+body::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e91e63), to(#2196f3));
+  background: linear-gradient(#e91e63, #2196f3);
+  -webkit-clip-path: circle(30% at right 80%);
+          clip-path: circle(30% at right 80%);
+  position: absolute;
+  height: 100%;
+  content: '';
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+body::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0f), to(#f00));
+  background: linear-gradient(#f0f, #f00);
+  -webkit-clip-path: circle(20% at left 10%);
+          clip-path: circle(20% at left 10%);
+  position: absolute;
+  height: 100%;
+  content: '';
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+body .navbar, body .main {
+  background-color: var(--secondaryBG) !important;
+  -webkit-box-shadow: var(--mainShadow) !important;
+          box-shadow: var(--mainShadow) !important;
+}
+
+body .navbar {
+  position: relative;
+  z-index: 1;
+}
+
+body .navbar a.nav-link {
+  color: var(--mainColor) !important;
+}
+
+body .navbar .btn {
+  background-color: transparent !important;
+  color: var(--mainColor);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .main {
+  border-radius: var(--mainRadius);
+  border-left: var(--lightBorder);
+  border-top: var(--lightBorder);
+  color: var(--mainColor);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: 50px;
+  min-height: 60vh;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+}
+
+body .main .home-page {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body .main .profile-page {
+  width: 100%;
+}
+
+body .main .auth-page {
+  padding: 1rem;
+  width: 100%;
+}
+
+body .main .auth-page .row {
+  width: 100%;
+}
+
+body .main .auth-page .row .col-md-6:last-child {
+  margin-top: 50px;
+}
+
+@media (min-width: 750px) {
+  body .main .auth-page .col-md-6:last-child {
+    margin-top: 0 !important;
+  }
+}
+
+body .main .error-page {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body .main .error-page .h1 {
+  font-size: 200px !important;
 }
 /*# sourceMappingURL=index.css.map */
